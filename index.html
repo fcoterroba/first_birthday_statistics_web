@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Estadísticas web del primer cumpleaños de @fcoterroba.com</title>
+	<script async="" src="Bar%20Chart_files/analytics.js"></script><script src="Bar%20Chart_files/Chart.js"></script>
+	<script src="Bar%20Chart_files/utils.js"></script>
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+
+<body>
+    <center>
+	<div id="container" style="width: 75%;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+		<canvas id="canvas" style="display: block; width: 1428px; height: 714px;" width="1428" height="714" class="chartjs-render-monitor"></canvas>
+	</div>
+	<script>
+		var color = Chart.helpers.color;
+		var barChartData = {
+			labels: ['Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Enero', 'Febrero', 'Marzo'],
+			datasets: [{
+				label: 'Visitas mensuales',
+				backgroundColor: color(window.chartColors.green).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.blue,
+				borderWidth: 1,
+				data: [
+                    816,
+                    1034,
+                    1101,
+                    1250,
+                    1604,
+                    1983,
+                    2468,
+                    3021,
+                    2867,
+                    3520,
+                    4010,
+                    5097
+				]
+			}]
+
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myBar = new Chart(ctx, {
+				type: 'bar',
+				data: barChartData,
+				options: {
+					responsive: true,
+					legend: {
+						position: 'top',
+					},
+					title: {
+						display: true,
+						text: 'Estadísitcas web del primer cumpleaños de @fcoterroba.com'
+					}
+				}
+			});
+
+		};
+
+
+    </script>
+    </center>
+</body>
+</html>

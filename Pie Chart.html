@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Pie Chart</title>
+	<script async="" src="Pie%20Chart_files/analytics.js"></script><script src="Pie%20Chart_files/Chart.js"></script>
+	<script src="Pie%20Chart_files/utils.js"></script>
+<style type="text/css">/* Chart.js */
+@keyframes chartjs-render-animation{from{opacity:.99}to{opacity:1}}.chartjs-render-monitor{animation:chartjs-render-animation 1ms}.chartjs-size-monitor,.chartjs-size-monitor-expand,.chartjs-size-monitor-shrink{position:absolute;direction:ltr;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1}.chartjs-size-monitor-expand>div{position:absolute;width:1000000px;height:1000000px;left:0;top:0}.chartjs-size-monitor-shrink>div{position:absolute;width:200%;height:200%;left:0;top:0}</style></head>
+
+<body>
+	<center>
+	<div id="canvas-holder" style="width:40%"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+		<canvas id="chart-area" style="display: block; width: 762px; height: 381px;" width="762" height="381" class="chartjs-render-monitor"></canvas>
+	</div>
+	<script>
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						2951,
+						4837,
+						8356,
+						12627
+					],
+					backgroundColor: [
+						window.chartColors.blue,
+						window.chartColors.yellow,
+						window.chartColors.orange,
+						window.chartColors.green,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'1º trimestre: Abril-Junio',
+					'2º trimestre: Julio-Septiembre',
+					'3º trimestre: Octubre-Diciembre',
+					'4º trimestre: Enero-Marzo'
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'Estadísticas web del primer cumpleaños de @fcoterroba.com'
+			}
+			},
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myPie = new Chart(ctx, config);
+		};
+	</script>
+	</center>
+</body>
+</html>
