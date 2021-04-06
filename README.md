@@ -5,7 +5,22 @@ The main library used in this project is ![Chart.js](https://www.chartjs.org/), 
 
 You can check the source code in [their GitHub](https://github.com/chartjs)
 
+## Install library
+
+You got some options to install **Chart.js**
+- Use node ![](https://img.shields.io/npm/v/chart.js.svg?style=flat-square&maxAge=600) ![](https://img.shields.io/npm/dm/chart.js.svg?style=flat-square&maxAge=600)
+  - ` npm install chart.js`
+- Use cdnjs ![](https://img.shields.io/cdnjs/v/Chart.js.svg?style=flat-square&maxAge=600)
+  - ![https://cdnjs.com/libraries/Chart.js](https://cdnjs.com/libraries/Chart.js)
+- Use jsDelivr ![](https://img.shields.io/npm/v/chart.js.svg?label=jsdelivr&style=flat-square&maxAge=600) ![](https://data.jsdelivr.com/v1/package/npm/chart.js/badge)
+  - ![https://www.jsdelivr.com/package/npm/chart.js?path=dist](https://www.jsdelivr.com/package/npm/chart.js?path=dist)
+
+## Clone this repository
+
+Just `git clone https://github.com/fcoterroba/first_birthday_statistics_web` and start to surf the project
+
 ## Some previews
+![](https://github.com/fcoterroba/first_birthday_statistics_web/blob/main/screenshots/image-768x419.png) ![](https://github.com/fcoterroba/first_birthday_statistics_web/blob/main/screenshots/Captura-de-pantalla_2021-04-01_09-42-20-768x391.png) ![](https://fcoterroba.com/wp-content/uploads/2021/04/Captura-de-pantalla_2021-04-01_10-01-09.png)
 
 ## License
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
